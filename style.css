@@ -1,0 +1,71 @@
+body {
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.1em;
+}
+
+.button-1 {
+    position: relative;
+    font-size: 1.0em;
+    letter-spacing: .3em;
+    padding: 10px 24px 10px 29px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 17em;
+    background: #f77912;
+    color: #b0e0e6;
+}
+
+.button:focus {
+    outline: none;
+}
+
+ table {
+    width: 50em; 
+    border: 2px solid black; 
+    border-collapse: collapse; 
+}
+
+td, th {
+    border: 1px solid black; 
+    font-size: 1.0em;
+    padding: 0;
+}
+
+th {
+    background: #b0e0e6; 
+    text-align: left;
+}
+
+th:first-child,
+td:first-child {
+    width: 15em;
+    padding: 3px; 
+}
+
+td:nth-child(even) {
+    background: #e0e2e3; 
+}
+
+.bigdName td, th {
+    border: 2px solid black;
+}
+
+.bigdName td {
+    background: #d3e9ec; 
+}
+
+input {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.0em; 
+    width: 100%; 
+    border: none;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+}
