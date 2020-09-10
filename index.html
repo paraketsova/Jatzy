@@ -10,8 +10,34 @@
 </head>
 <body>
     <h1>YATZY</h1>
+    <div class="wrap">
+        <div class="bblock">
+           <p class="dice_image"><img src="random_dice.png"/> </p>
+           <input type="checkbox" id="dice1" name="dice1" value="">
+        </div>
+        <div class="bblock">
+            <p class="dice_image"><img src="random_dice.png"/> </p>
+            <input type="checkbox" id="dice2" name="dice2" value="">
+        </div>
+        <div class="bblock">
+            <p class="dice_image"><img src="random_dice.png"/> </p>
+            <input type="checkbox" id="dice3" name="dice3" value="">
+        </div>        
+        <div class="bblock">
+            <p class="dice_image"><img src="random_dice.png"/> </p>
+            <input type="checkbox" id="dice4" name="dice4" value="">
+        </div>      
+        <div class="bblock">
+            <p class="dice_image"><img src="random_dice.png"/> </p>
+            <input type="checkbox" id="dice5" name="dice5" value="">
+        </div>
+        <div class="antal_kast">
+            <p><span id="kast"></span> <button id="throw_of_dice">Slå tärningar</button></p>
+            <p></p>
+        </div>      
+    </div>
 
-    <button id="calc"> Beräkna!</button>
+    <button id="calc">Beräkna!</button>
 
     <table>
         <tr class = "bigName">
@@ -120,10 +146,10 @@
         </tr>
         <tr>
             <td>Kåk/Full house</td>
-            <td><input type="number" value=""></td>
-            <td><input type="number" value=""></td>
-            <td><input type="number" value=""></td>
-            <td><input type="number" value=""></td>
+            <td><input type="number" id="player1_fullhouse" value=""></td>
+            <td><input type="number" id="player2_fullhouse" value=""></td>
+            <td><input type="number" id="player3_fullhouse" value=""></td>
+            <td><input type="number" id="player4_fullhouse" value=""></td>
         </tr>
         <tr>
             <td>Chans/Chance</td>
