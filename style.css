@@ -50,11 +50,11 @@ td:nth-child(even) {
     background: #e0e2e3; 
 }
 
-.bigdName td, th {
+.bigName td, th {
     border: 2px solid black;
 }
 
-.bigdName td {
+.bigName td {
     background: #d3e9ec; 
 }
 
