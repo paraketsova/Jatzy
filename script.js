@@ -14,8 +14,9 @@ let handleDiceButton = function() {
 let throwTheDice = function(event) {
     let diceResult = [];
     for (let i=1; i<=5; i++) {
-        let position = getRndInteger(1, 6);
-        diceResult.push(position);
+        let num = getRndInteger(1, 6);
+        diceResult.push(num);
+        updateDiePicture(i, num);
     }
     console.log(diceResult);
     return countDice(diceResult);
@@ -23,6 +24,11 @@ let throwTheDice = function(event) {
 
 let getRndInteger = function(min, max) {
     return Math.floor (Math.random() * (max - min + 1) ) + min;
+};
+
+let updateDiePicture = function(i, num) {
+    let img = document.getElementById('dp' + i);
+    img.src = num + '.png';
 };
 
 let countDice = function(dice) {
@@ -42,6 +48,11 @@ let countDice = function(dice) {
 
 // TODO: rewtrite this as fillNumberCells()
 /*
+найти эл в доме
+объект . src ...
+
+заменить property src ijpg
+
 let calculateSums = function(event) {
     for (let i=1; i<=4; i++) {
         let sum = 0;
